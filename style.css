@@ -15,16 +15,32 @@ header {
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 15px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #0B3D0B;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #004d00; /* Darker shade of green on hover */
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
 }
 
 .hero-image, .team-image, .services-image, .portfolio-image, .contact-image {
@@ -39,10 +55,12 @@ nav ul li a {
 .hero, .team, .services, .portfolio, .contact {
     padding: 2rem;
     text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 footer {
-    background-color: #0B3D0B;
+    background-color: #0B3D0B; /* Forest Green */
     color: #FFFFFF;
     text-align: center;
     padding: 1rem;
@@ -50,3 +68,13 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+h1, h2 {
+    color: #0B3D0B;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
